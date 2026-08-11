@@ -1,0 +1,50 @@
+/* Component-scoped styles for EmployeeCard */
+
+.card {
+  background: #d0d206;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 16px;
+  width: 320px;
+  margin: 12px 0;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  transition: transform 0.13s ease, box-shadow 0.13s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.experienceBadge {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.12), rgba(37, 99, 235, 0.08));
+  color: #1e40af;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.cardBody {
+  padding-top: 6px;
+}
+
+.cardRole {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
