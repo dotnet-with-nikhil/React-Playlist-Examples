@@ -1,5 +1,11 @@
 import './App.css'
-import TodoList from './components/useState-Functional-Update/todo-list'
+import LoginForm from './components/event-submit/LoginForm'
+// import UserForm from './components/events-click-change/UserForm'
+// import products from './components/operator-list-dynamic-rendering/static-data';
+// import OperatorListDynamicRendering from './components/operator-list-dynamic-rendering/operator-list-dynamic-rendering'
+// import UserProfile from './components/conditional-rendering/UserProfile'
+// import EmployeeManager from './components/multiple-state-objects-state-arrays/EmployeeManager'
+// import TodoList from './components/useState-Functional-Update/todo-list'
 // import Counter from './components/use-states-example/Counter'
 // import UserCard  from './components/props-validation/UserCard';
 // import CardChildren from './components/children-component/Card-Children'
@@ -33,10 +39,28 @@ function App() {
   //       alert("Profile clicked!");
   //   };
 
+  // const user = {
+  //   name: "John Doe",
+  //   role: "Emp",
+  //   isLoggedIn: false,
+  //   isActive: true,
+  // };
+
   return (
     <>
      <div>
-      <TodoList/>
+        <h2>Submit Event Demo</h2>
+        <LoginForm />
+      {/* <UserForm/> */}
+
+      {/* <OperatorListDynamicRendering products = {products}/> */}
+
+
+      {/* <h1>Conditional Rendering Demo</h1>
+
+      <UserProfile user={user} /> */}
+      {/* <EmployeeManager />; */}
+      {/* <TodoList/> */}
       {/* <Counter/> */}
       {/* <UserCard
           name={user.name}
