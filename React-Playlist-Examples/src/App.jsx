@@ -1,5 +1,13 @@
 import './App.css'
-import LoginForm from './components/event-submit/LoginForm'
+// import UseCallbackExample from './components/react-hooks/usecallback-example'
+// import UseMemoExample from './components/react-hooks/usememo-example'
+// import ReducerExample from './components/react-hooks/ReducerExample' 
+// import Login from './components/react-hooks/RefExample'
+// import Dashboard from './components/react-hooks/ContextExample';
+// import { UserContext } from './components/react-hooks/UserContext';
+// import Users from './components/react-hooks/useEffect-Example.jsx'
+// import BasicHooks from './components/react-hooks/BasicHooks'
+// import LoginForm from './components/event-submit/LoginForm'
 // import UserForm from './components/events-click-change/UserForm'
 // import products from './components/operator-list-dynamic-rendering/static-data';
 // import OperatorListDynamicRendering from './components/operator-list-dynamic-rendering/operator-list-dynamic-rendering'
@@ -21,6 +29,11 @@ import LoginForm from './components/event-submit/LoginForm'
 // import ProfileCard from './components/attributes/ProfileCard'
 //import EmployeeCard from './components/expressions/EmployeeCard'
 // import UserCard from './components/jsx-example/UserCard'
+// import PreventDefaultExample from './components/prevent-default-event-bubling/prevent-default-ex'
+// import EventBubblingExample from './components/prevent-default-event-bubling/event-bubling'
+//  import UnControlledComponent from './components/controlled-uncontrolled-components/uncontrolled-components'
+// import UserForm from './components/events-click-change/UserForm'
+import EmployeeForm from './components/form-validation/EmployeeForm'
 
 function App() {
 
@@ -46,11 +59,54 @@ function App() {
   //   isActive: true,
   // };
 
+  // const user = {
+  //       name: "Nikhil",
+  //       role: "Admin"
+  //   };
+
   return (
     <>
      <div>
-        <h2>Submit Event Demo</h2>
-        <LoginForm />
+    <EmployeeForm/>
+    {/* <UserForm/> */}
+
+    {/* <UnControlledComponent/> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {/* <PreventDefaultExample/> */}
+
+    {/* <EventBubblingExample/> */}
+
+    {/* <UnControlledComponent/> */}
+
+          {/* <h1>React Hooks - Real-Time Examples</h1> */}
+          {/* <BasicHooks /> */}
+          {/* <Users/> */}
+          {/* <UserContext.Provider value={user}>
+              <Dashboard/>  
+          </UserContext.Provider>       
+         */}
+          {/* <Login/> */}
+        {/* <ReducerExample/> */}
+        {/* <UseMemoExample/> */}
+        {/* <UseCallbackExample/> */}
+        
+        {/* <h2>Submit Event Demo</h2>
+        <LoginForm /> */}
       {/* <UserForm/> */}
 
       {/* <OperatorListDynamicRendering products = {products}/> */}
