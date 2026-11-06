@@ -34,9 +34,27 @@ import './App.css'
 //  import UnControlledComponent from './components/controlled-uncontrolled-components/uncontrolled-components'
 // import UserForm from './components/events-click-change/UserForm'
 import EmployeeForm from './components/form-validation/EmployeeForm'
-
+import UseCallbackUseMemoExamples from './components/reusable-components/useMemo-useCallback-Examples'
+import RegistrationForm from './components/zod-validation/RegistrationForm'
+import UserPreference from './components/custom-hook-example/UserPreference'
+import { UserContext } from './components/contextAPI-example/UserContext'
+import UserProfileContextAPI from './components/contextAPI-example/UserProfileContextAPI'
+import Product from './components/redux-example/components/Product'
+import Cart from './components/redux-example/components/Cart'
+import Navbar from './components/routing-example/Navbar'
+import { Routes, Route } from "react-router-dom";
+// import Home from './components/routing-example/Home'
+import About from './components/routing-example/About'
+// import Contact from './components/routing-example/Contact'
+import Home from './components/advanced-routing/pages/Home'
+import Login from './components/advanced-routing/pages/Login'
+import ProductDetails from './components/advanced-routing/pages/ProductDetails'
+import DashboardLayout from './components/advanced-routing/layouts/DashboardLayout'
+import Profile from './components/advanced-routing/pages/Profile'
+import Settings from './components/advanced-routing/pages/Settings'
+import { Navigate } from "react-router-dom";
 function App() {
-
+  const userName = "Nikhil";
   // const user = {
   //       name: "Nikhil",
   //       age: 30,
@@ -63,29 +81,99 @@ function App() {
   //       name: "Nikhil",
   //       role: "Admin"
   //   };
-
+  const isLoggedIn = true;
   return (
     <>
-     <div>
-    <EmployeeForm/>
+
+       <Routes>
+
+            <Route
+                path="/"
+                element={<Home />}
+            />
+
+            <Route
+                path="/login"
+                element={<Login />}
+            />
+
+            <Route
+                path="/products/:id"
+                element={<ProductDetails />}
+            />
+
+            <Route
+                path="/dashboard"
+                element={
+                    isLoggedIn
+                        ? <DashboardLayout />
+                        : <Navigate to="/login" replace />
+                }
+            >
+
+                <Route
+                    path="profile"
+                    element={<Profile />}
+                />
+
+                <Route
+                    path="settings"
+                    element={<Settings />}
+                />
+
+            </Route>
+
+        </Routes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {/* <Navbar />
+
+    <Routes>
+
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes> */}
+
+
+
+
+    {/* <div> */}
+
+      {/* <h1>React Redux Example</h1>
+      <Product />
+      <Cart /> */}
+      {/* <UserContext.Provider value={{ userName }}>
+        <h1>ContextAPI Example - React</h1>
+        <UserProfileContextAPI/>
+      </UserContext.Provider> */}
+
+      {/* <UserPreference/> */}
+      {/* <RegistrationForm /> */}
+    {/* </div> */}
+     {/* <div> */}
+      {/* <UseCallbackUseMemoExamples/> */}
+    {/* <EmployeeForm/> */}
     {/* <UserForm/> */}
 
     {/* <UnControlledComponent/> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     {/* <PreventDefaultExample/> */}
 
@@ -126,7 +214,7 @@ function App() {
           address={user.address}
           onViewProfile={handleViewProfile}
             /> */}
-     </div>
+     {/* </div> */}
         {/* <Dashboard /> */}
       {/* <div> */}
         {/* <h1>JSX Syntax Demo</h1>
