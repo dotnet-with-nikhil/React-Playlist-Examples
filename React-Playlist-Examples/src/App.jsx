@@ -53,10 +53,14 @@ import DashboardLayout from './components/advanced-routing/layouts/DashboardLayo
 import Profile from './components/advanced-routing/pages/Profile'
 import Settings from './components/advanced-routing/pages/Settings'
 import { Navigate } from "react-router-dom";
-import UserList from './components/fetch-api-example/UserList';
-import AddUser from './components/fetch-api-example/AddUser';
-import UpdateUser from './components/fetch-api-example/UpdateUser';
-import DeleteUser from './components/fetch-api-example/DeleteUser';
+// import UserList from './components/fetch-api-example/UserList';
+// import AddUser from './components/fetch-api-example/AddUser';
+// import UpdateUser from './components/fetch-api-example/UpdateUser';
+// import DeleteUser from './components/fetch-api-example/DeleteUser';
+import UserList from './components/axios-api-examples/components/UserList';
+import AddUser from './components/axios-api-examples/components/AddUser';
+import UpdateUser from './components/axios-api-examples/components/UpdateUser';
+import DeleteUser from './components/axios-api-examples/components/DeleteUser';
 function App() {
   const userName = "Nikhil";
   // const user = {
@@ -89,11 +93,21 @@ function App() {
   return (
     <>
 
-      <h2>Fetch API Example</h2>
+     <h1>Axios API Example</h1>
+     <UserList/>  
+     <AddUser/>
+     <UpdateUser/>
+     <DeleteUser/>
+     
+     
+     
+     
+     
+      {/* <h2>Fetch API Example</h2>
       <UserList />
       <AddUser />
       <UpdateUser />
-      <DeleteUser />
+      <DeleteUser /> */}
 
 
 
