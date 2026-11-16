@@ -61,8 +61,9 @@ import { Navigate } from "react-router-dom";
 // import AddUser from './components/axios-api-examples/components/AddUser';
 // import UpdateUser from './components/axios-api-examples/components/UpdateUser';
 // import DeleteUser from './components/axios-api-examples/components/DeleteUser';
-import ProductList from './components/error-bounderies-examples/components/ProductList';
-import ErrorBoundary from './components/error-bounderies-examples/components/ErrorBoundary';
+// import ProductList from './components/error-bounderies-examples/components/ProductList';
+// import ErrorBoundary from './components/error-bounderies-examples/components/ErrorBoundary';
+import ModelComponent from './components/portal-modal-example/component/modelcomponent';
 function App() {
   const userName = "Nikhil";
   // const user = {
@@ -95,22 +96,24 @@ function App() {
   return (
     <>
 
-    <ErrorBoundary>
+    <ModelComponent/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {/* <ErrorBoundary>
       <ProductList />
-    </ErrorBoundary>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </ErrorBoundary> */}
 
      {/* <h1>Axios API Example</h1>
      <UserList/>  
@@ -118,23 +121,11 @@ function App() {
      <UpdateUser/>
      <DeleteUser/> */}
      
-     
-     
-     
-     
       {/* <h2>Fetch API Example</h2>
       <UserList />
       <AddUser />
       <UpdateUser />
       <DeleteUser /> */}
-
-
-
-
-
-
-
-
 
        {/* <Routes>
 
