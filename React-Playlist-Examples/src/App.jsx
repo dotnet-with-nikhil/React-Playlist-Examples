@@ -57,10 +57,12 @@ import { Navigate } from "react-router-dom";
 // import AddUser from './components/fetch-api-example/AddUser';
 // import UpdateUser from './components/fetch-api-example/UpdateUser';
 // import DeleteUser from './components/fetch-api-example/DeleteUser';
-import UserList from './components/axios-api-examples/components/UserList';
-import AddUser from './components/axios-api-examples/components/AddUser';
-import UpdateUser from './components/axios-api-examples/components/UpdateUser';
-import DeleteUser from './components/axios-api-examples/components/DeleteUser';
+// import UserList from './components/axios-api-examples/components/UserList';
+// import AddUser from './components/axios-api-examples/components/AddUser';
+// import UpdateUser from './components/axios-api-examples/components/UpdateUser';
+// import DeleteUser from './components/axios-api-examples/components/DeleteUser';
+import ProductList from './components/error-bounderies-examples/components/ProductList';
+import ErrorBoundary from './components/error-bounderies-examples/components/ErrorBoundary';
 function App() {
   const userName = "Nikhil";
   // const user = {
@@ -93,11 +95,28 @@ function App() {
   return (
     <>
 
-     <h1>Axios API Example</h1>
+    <ErrorBoundary>
+      <ProductList />
+    </ErrorBoundary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {/* <h1>Axios API Example</h1>
      <UserList/>  
      <AddUser/>
      <UpdateUser/>
-     <DeleteUser/>
+     <DeleteUser/> */}
      
      
      

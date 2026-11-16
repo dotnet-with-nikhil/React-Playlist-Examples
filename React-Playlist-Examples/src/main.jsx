@@ -6,13 +6,22 @@ import App from './App.jsx'
 import "bootstrap/dist/css/bootstrap.min.css";
 // import { store } from './components/redux-example/store';
 import { BrowserRouter } from "react-router-dom";
-
+import React from 'react';
 
 createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
+    <React.StrictMode>
         <App />
-    </BrowserRouter>
-);
+    </React.StrictMode>
+)
+
+
+
+
+// createRoot(document.getElementById("root")).render(
+//     <BrowserRouter>
+//         <App />
+//     </BrowserRouter>
+// );
 
 
 
