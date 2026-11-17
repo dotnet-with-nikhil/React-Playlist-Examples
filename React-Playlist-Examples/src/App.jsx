@@ -49,7 +49,7 @@ import About from './components/routing-example/About'
 import Home from './components/advanced-routing/pages/Home'
 import Login from './components/advanced-routing/pages/Login'
 import ProductDetails from './components/advanced-routing/pages/ProductDetails'
-import DashboardLayout from './components/advanced-routing/layouts/DashboardLayout'
+// import DashboardLayout from './components/advanced-routing/layouts/DashboardLayout'
 import Profile from './components/advanced-routing/pages/Profile'
 import Settings from './components/advanced-routing/pages/Settings'
 import { Navigate } from "react-router-dom";
@@ -63,9 +63,12 @@ import { Navigate } from "react-router-dom";
 // import DeleteUser from './components/axios-api-examples/components/DeleteUser';
 // import ProductList from './components/error-bounderies-examples/components/ProductList';
 // import ErrorBoundary from './components/error-bounderies-examples/components/ErrorBoundary';
-import ModelComponent from './components/portal-modal-example/component/modelcomponent';
+// import ModelComponent from './components/portal-modal-example/component/modelcomponent';
+// import APIGETExample from './components/example-component/APIGETExample';
+import withAuth from './components/HOC-Examples/hoc/withAuth';
+import DashboardLayout from './components/HOC-Examples/dashboard/Dashboard';
 function App() {
-  const userName = "Nikhil";
+  // const userName = "Nikhil";
   // const user = {
   //       name: "Nikhil",
   //       age: 30,
@@ -92,25 +95,21 @@ function App() {
   //       name: "Nikhil",
   //       role: "Admin"
   //   };
-  const isLoggedIn = true;
+  // const isLoggedIn = true;
+  const ProtectedDashboard = withAuth(DashboardLayout);
   return (
     <>
 
-    <ModelComponent/>
+  <ProtectedDashboard/>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+{/* 
+    <APIGETExample /> */}
+    {/* <ModelComponent/> */}
     {/* <ErrorBoundary>
       <ProductList />
     </ErrorBoundary> */}
